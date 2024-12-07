@@ -34,7 +34,7 @@ const config: Config = {
         htmlLang: 'en-US',
       },
       'zh-Hans': {
-        direction: 'ltr',
+        htmlLang: 'zh-Hans',
       },
     },
   },
