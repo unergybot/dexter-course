@@ -10,8 +10,8 @@ sidebar_position: 1
 * 高级课程：《ROS高级》，面向ROS高级开发者。【计划中】
 * 终极课程：《成为ROS开发工程师》，面向ROS开发工程师。【计划中】
 
-<video width="100%" controls autoplay muted>
-  <source src="/static/img/6-axis-arm.webm" type="video/webm" />
+<video width="80%" controls autoplay loop muted>
+  <source src="/videos/6-axis-arm.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
