@@ -17,7 +17,7 @@ cd catkin_ws/src
 ```bash
 git clone https://github.com/mintasca/ros_gluon.git
 ```
-::: tip[如果没安装git,请先安装git]
+:::tip[如果没安装git,请先安装git]
 ```bash
 sudo apt-get install git
 ```
