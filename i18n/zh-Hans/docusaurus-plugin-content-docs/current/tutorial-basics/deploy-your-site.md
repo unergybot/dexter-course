@@ -16,7 +16,7 @@ roslaunch gluon display.launch
 
 ## Moveit + Rviz控制模式
 ```bash
-roslaunch gluon_moveit_config cm_demo.launch
+roslaunch gluon_moveit_config ub_demo.launch
 ```
 这个demo 在rviz展示gluon 模型，在界面中拖拽至目标点或设置Goal State（预设值），点击按钮Plan -> Execute或 Plan and Execute, 我们可以看到gluon 模型运动到目标位置的运动轨迹（真机同步联动）。
 
@@ -24,4 +24,4 @@ roslaunch gluon_moveit_config cm_demo.launch
 ```bash
 roslaunch moveit_tutorials move_group_interface_tutorial.launch
 ```
-需要在cm_demo的基础上运行，提供了joint_state space 和 Cartesian 笛卡尔空间路径规划例子。
+需要在ub_demo的基础上运行，提供了joint_state space 和 Cartesian 笛卡尔空间路径规划例子。

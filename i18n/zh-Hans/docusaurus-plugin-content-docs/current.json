@@ -14,5 +14,9 @@
   "sidebar.tutorialSidebar.category.Tutorial - Extras": {
     "message": "中级课程-掌握ROS",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.scratch-6axis-arm": {
+    "message": "Schratch操作机械臂",
+    "description": "The label for category scratch-6axis-arm in sidebar tutorialSidebar"
   }
 }
