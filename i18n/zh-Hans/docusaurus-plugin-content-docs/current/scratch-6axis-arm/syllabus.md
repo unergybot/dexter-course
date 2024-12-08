@@ -7,7 +7,7 @@ sidebar_position: 1
 本课程为初学者介绍人工智能（AI）的基础知识，重点是通过Scratch控制6轴机械臂。课程设计结合了AI理论概念与实际编程操作，提供双语（英语和中文）教学。
 
 <div style={{display: 'flex', alignItems: 'center'}}>
-    <video controls width="480">
+    <video controls width="480" autoplay loop muted>
         <source src="/videos/6-axis-arm.mp4" type="video/mp4" />
     </video>
     <img src="/img/scratch-6axis-arm.png" alt="Scratch" width="480" />
