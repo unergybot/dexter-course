@@ -2,42 +2,45 @@
 sidebar_position: 1
 ---
 
-# Create a Page
+# 硬件连接及环境搭建
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+本文档以GLUON桌面型六轴机械臂为例，展示如何连接机械臂，以及在PC端运行ROS的过程。
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+## 硬件要求
+PC电脑环境要求
+- Ubuntu 18.04 操作系统
+- CPU: 双核2GHz或更高
+- 内存: 2GB或更高
+- 硬盘：2GB或更高
 
-## Create your first React Page
+## 第一步：连接电源
+:::danger 注意
 
-Create a file at `src/pages/my-react-page.js`:
+连接电源前请保证电源处于关闭状态。
 
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
+:::
 
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
-```
+连接电源与ECB
+![ECB 连接XT60](img/gloun4.jpg)
+![完成预览图](img/gloun5.jpg)
 
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
+## 第二步：连接执行器及其配件
+连接执行器综合线缆
+![任意molex接口](img/gloun8.jpg)
+![连接完成](img/gloun9.jpg)
 
-## Create your first Markdown Page
+## 第三步：连接机械臂
+用执行器连接线连接ECB与执行器
+![连接完成](img/gloun11.jpg)
 
-Create a file at `src/pages/my-markdown-page.md`:
+## 第四步：连接电脑
+用网线连接ECB与电脑
+![连接电脑网口](img/gloun14.jpg)
 
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
+## 第五步：连接后整体视图
+![示意图](img/gloun17.jpg)
 
-This is a Markdown page
-```
+## 第六步：开启电源
+![开启电源](img/poweron.png)
 
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+上电以后，执行器LED状态灯会变成黄色闪烁，启动执行器后，LED会变成绿色闪烁，这时就可以与执行器进行通信了。如果执行器内部出现错误，LED灯会变为红色闪烁，请检查执行器错误代码。
